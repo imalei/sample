@@ -13,6 +13,10 @@
 	<select id="findByState" resultMap="BaseResultMap">
 		SELECT id, name, state, country FROM city WHERE state = #{state}
 	</select>
+	
+	<select id="searchByPage" resultMap="BaseResultMap">
+		SELECT id, name, state, country FROM city WHERE state = #{state}
+	</select>
 
 </mapper>
 <!--xml配置方式使用此文件 配置好相应的路径 -->
